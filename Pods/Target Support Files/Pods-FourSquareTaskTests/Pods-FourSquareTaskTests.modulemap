@@ -1,0 +1,6 @@
+framework module Pods_FourSquareTaskTests {
+  umbrella header "Pods-FourSquareTaskTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

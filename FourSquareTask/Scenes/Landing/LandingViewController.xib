@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LandingViewController" customModule="FourSquareTask" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="landing_BG" translatesAutoresizingMaskIntoConstraints="NO" id="AOe-0Y-oZh">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <view alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oeP-Xs-i39" userLabel="blurEffectView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foursuqre Search Engine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="M3p-ba-ViB">
+                    <rect key="frame" x="10" y="429.5" width="394" height="37"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="27"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find Exciting Nearby Places" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="cCq-b7-7vH">
+                    <rect key="frame" x="15" y="476.5" width="384" height="23.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bg3-Qo-8mD">
+                    <rect key="frame" x="10" y="747" width="394" height="65"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="O7y-Un-QrR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="START EXPLORING"/>
+                    <connections>
+                        <action selector="startExploreBtnPressed:" destination="-1" eventType="touchUpInside" id="oe5-pN-J2q"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cCq-b7-7vH" firstAttribute="top" secondItem="M3p-ba-ViB" secondAttribute="bottom" constant="10" id="4lB-h6-EFV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AOe-0Y-oZh" secondAttribute="trailing" id="5pm-Vp-zZa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="M3p-ba-ViB" secondAttribute="trailing" constant="10" id="6Ny-V1-WYL"/>
+                <constraint firstAttribute="trailing" secondItem="cCq-b7-7vH" secondAttribute="trailing" constant="15" id="FNJ-Sl-pqi"/>
+                <constraint firstItem="M3p-ba-ViB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ISE-kR-BeF"/>
+                <constraint firstItem="Bg3-Qo-8mD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="K3f-aj-Gi6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Bg3-Qo-8mD" secondAttribute="bottom" constant="50" id="ZPU-75-fiN"/>
+                <constraint firstItem="M3p-ba-ViB" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ZQs-vw-1cO"/>
+                <constraint firstItem="AOe-0Y-oZh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cH4-4V-5V0"/>
+                <constraint firstItem="oeP-Xs-i39" firstAttribute="top" secondItem="AOe-0Y-oZh" secondAttribute="top" id="dxo-Ax-KBO"/>
+                <constraint firstItem="Bg3-Qo-8mD" firstAttribute="top" relation="greaterThanOrEqual" secondItem="cCq-b7-7vH" secondAttribute="bottom" constant="10" id="f1X-uL-xbB"/>
+                <constraint firstItem="M3p-ba-ViB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="g0m-5k-5Ye"/>
+                <constraint firstAttribute="bottom" secondItem="AOe-0Y-oZh" secondAttribute="bottom" id="jMv-kN-7q8"/>
+                <constraint firstItem="AOe-0Y-oZh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pP1-Ha-uHK"/>
+                <constraint firstItem="oeP-Xs-i39" firstAttribute="trailing" secondItem="AOe-0Y-oZh" secondAttribute="trailing" id="uNl-er-ukl"/>
+                <constraint firstItem="oeP-Xs-i39" firstAttribute="leading" secondItem="AOe-0Y-oZh" secondAttribute="leading" id="ukj-iX-qrI"/>
+                <constraint firstItem="cCq-b7-7vH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="uoN-sT-qYc"/>
+                <constraint firstItem="oeP-Xs-i39" firstAttribute="bottom" secondItem="AOe-0Y-oZh" secondAttribute="bottom" id="xyX-Vr-rvB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Bg3-Qo-8mD" secondAttribute="trailing" constant="10" id="zsu-2P-ywn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="108.48214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="landing_BG" width="1280" height="853"/>
+    </resources>
+</document>
