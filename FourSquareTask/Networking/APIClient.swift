@@ -13,23 +13,19 @@ import Alamofire
 class APIClient {
     static let sharedInstance = APIClient()
     private init() {}
-    func getPlaces() -> Single<[Venue]> {
-        return requestRemote(APIRouter.getPlaces(latitude: 40.7, longitude: -74))
+    
+    func getPlaces(latitude: Double, longitude: Double) -> Single<VenuesDTO> {
+        return requestRemote(APIRouter.getPlaces(latitude: latitude, longitude: latitude))
     }
     
-    func requestRemote(_ urlConvertible: URLRequestConvertible) -> Single<[Venue]> {
-        
-        return Single<[Venue]>.create { observer in
+    private func requestRemote(_ urlConvertible: URLRequestConvertible) -> Single<VenuesDTO> {
+        return Single<VenuesDTO>.create { observer in
             let request = Alamofire.request(urlConvertible).responseData { (response) in
                 switch response.result {
                 case .success(let value):
                     do {
-                        let venuesResponse = try JSONDecoder().decode(VenuesDTO.self, from: value)
-                        guard let venues = venuesResponse.response?.venues else {
-                            observer(.error(ApiError.notFound))
-                            return
-                        }
-                        observer(.success(venues))
+                        let venuesDTO = try JSONDecoder().decode(VenuesDTO.self, from: value)
+                        observer(.success(venuesDTO))
                         
                     } catch {
                         print(error)

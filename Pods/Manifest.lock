@@ -1,20 +1,42 @@
 PODS:
   - Alamofire (4.9.1)
+  - Kingfisher (4.10.1)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxCoreLocation (1.4.1):
+    - RxCoreLocation/Core (= 1.4.1)
+  - RxCoreLocation/Core (1.4.1):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
   - RxSwift (5.0.1)
 
 DEPENDENCIES:
   - Alamofire
+  - Kingfisher
+  - RxCocoa
+  - RxCoreLocation (~> 1.4)
   - RxSwift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Kingfisher
+    - RxCocoa
+    - RxCoreLocation
+    - RxRelay
     - RxSwift
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxCoreLocation: 85e9a3310c22619404dcbf91258d29c44429eea8
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
 
-PODFILE CHECKSUM: 79bb4a89e80ed9f085501d932df44ffc57494913
+PODFILE CHECKSUM: 9e21c10a0bcdc75946f00451c96ddb3d370fab0e
 
 COCOAPODS: 1.5.3

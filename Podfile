@@ -7,7 +7,10 @@ target 'FourSquareTask' do
 
   # Pods for FourSquareTask
 	pod 'RxSwift'
+    pod 'RxCocoa'
     pod 'Alamofire'
+    pod 'RxCoreLocation', '~> 1.4'
+    pod 'Kingfisher'
   target 'FourSquareTaskTests' do
     inherit! :search_paths
     # Pods for testing

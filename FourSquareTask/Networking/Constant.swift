@@ -18,6 +18,7 @@ struct Constants {
         static let clientSecret = "client_secret"
         static let version = "v"
         static let location = "ll"
+        static let radius = "radius"
     }
     
     enum HttpHeaderField: String {

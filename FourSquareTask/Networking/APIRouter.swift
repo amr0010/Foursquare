@@ -61,7 +61,8 @@ enum APIRouter: URLRequestConvertible {
                 [Constants.Parameters.clientID: Constants.clientId,
                  Constants.Parameters.clientSecret: Constants.clientSecret,
                  Constants.Parameters.version: "20200716",
-                 Constants.Parameters.location: "\(latitude),\(longitude)"]
+                 Constants.Parameters.location: "\(latitude),\(longitude)",
+                 Constants.Parameters.radius: 100000]
         }
     }
 }

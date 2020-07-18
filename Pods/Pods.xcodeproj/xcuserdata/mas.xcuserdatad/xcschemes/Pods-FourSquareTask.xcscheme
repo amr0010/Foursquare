@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2C6637F077EF35CC9284D279228FD56D"
+               BlueprintIdentifier = "2CCE49E5722DE15989F27AD907869FB3"
                BuildableName = "Pods_FourSquareTask.framework"
                BlueprintName = "Pods-FourSquareTask"
                ReferencedContainer = "container:Pods.xcodeproj">
