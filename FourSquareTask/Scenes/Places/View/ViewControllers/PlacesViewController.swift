@@ -26,7 +26,6 @@ class PlacesViewController: UITableViewController {
         setupNavigationBar()
     }
     private func setupNavigationBar() {
-//       let rightBtn = UIBarButtonItem(image: UIImage(named: "rightmenu"), style: .plain, target: self, action: #selector(onClickMethod))//Change your function name and image name here
         let realTimeBtn = UIBarButtonItem(title: "realTime", style: .plain, target: self, action:  #selector(onClickMethod))
         self.navigationItem.rightBarButtonItem = realTimeBtn
     }
@@ -37,9 +36,6 @@ class PlacesViewController: UITableViewController {
         tableView.delegate = nil
         tableView.dataSource = nil
         tableView.estimatedRowHeight = 600
-//        let x = LoadingView.instanceFromNib
-//        tableView.tableFooterView = x
-        
         tableView
             .rx.setDelegate(self)
             .disposed(by: disposeBag)

@@ -14,6 +14,7 @@ target 'FourSquareTask' do
   target 'FourSquareTaskTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'RxSwift'
   end
 
 end

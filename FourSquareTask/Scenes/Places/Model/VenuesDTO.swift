@@ -36,7 +36,7 @@ struct Venue: Codable {
     let id, name: String?
     let location: Location?
     let categories: [Category]?
-    let referralID: String
+    let referralID: String?
     let hasPerk: Bool?
     let venuePage: VenuePage?
 
@@ -49,9 +49,9 @@ struct Venue: Codable {
 
 // MARK: - Category
 struct Category: Codable {
-    let id, name, pluralName, shortName: String
-    let icon: Icon
-    let primary: Bool
+    let id, name, pluralName, shortName: String?
+    let icon: Icon?
+    let primary: Bool?
 }
 
 // MARK: - Icon
@@ -80,8 +80,8 @@ struct Location: Codable {
 
 // MARK: - LabeledLatLng
 struct LabeledLatLng: Codable {
-    let label: Label
-    let lat, lng: Double
+    let label: Label?
+    let lat, lng: Double?
 }
 
 enum Label: String, Codable {

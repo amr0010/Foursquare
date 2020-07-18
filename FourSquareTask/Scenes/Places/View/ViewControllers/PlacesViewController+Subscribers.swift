@@ -18,9 +18,9 @@ func setupViewModelsSubscribers() {
     private func setupTableViewSubscriber() {
         placesViewModel.venuesViewModel
             .asObservable()
-            .bind(to: tableView.rx.items(cellIdentifier: VenueTableViewCell.identifier, cellType: VenueTableViewCell.self)) { (row, element, cell) in
+            .bind(to: tableView.rx.items(cellIdentifier: VenueTableViewCell.identifier, cellType: VenueTableViewCell.self)) { [weak self] (row, element, cell) in
+                self?.tableView.tableFooterView = nil
                 cell.venueViewModel = element
-
             }
             .disposed(by: disposeBag)
     }
@@ -29,12 +29,22 @@ func setupViewModelsSubscribers() {
             switch state {
             case .idle:
                 break
-            case .errorInLoading(let error):
-                break
-            case .loadinPlaces:
-                break
-            case .placesLoaded:
-                break
+            case .errorInLoading:
+                let errorView = ErrorView.instanceFromNib
+                errorView?.frame = CGRect(x: 0, y: 0, width: 150, height: 150)
+                self?.tableView.tableFooterView = errorView
+            case .loadingPlaces:
+                 let loadingView = LoadingView.instanceFromNib
+                 loadingView?.frame = CGRect(x: 0, y: 0, width: 150, height: 150)
+                 self?.tableView.tableFooterView = loadingView
+            case .noData:
+                 let noDataView = NoDataView.instanceFromNib
+                 noDataView?.frame = CGRect(x: 0, y: 0, width: 150, height: 150)
+                 self?.tableView.tableFooterView = noDataView
+            case .noLocationPermitted:
+                 let noLocationView = NoLocationView.instanceFromNib
+                 noLocationView?.frame = CGRect(x: 0, y: 0, width: 150, height: 150)
+                 self?.tableView.tableFooterView = noLocationView
             case .requesUserLocation:
                 self?.requestUserAccess()
             case .changeToRealTime:

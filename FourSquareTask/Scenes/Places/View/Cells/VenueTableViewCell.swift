@@ -16,8 +16,10 @@ class VenueTableViewCell: UITableViewCell {
     var venueViewModel: VenueViewModel! {
         didSet {
             venueNameLabel.text = venueViewModel.title
-            venueImageView.kf.indicatorType = .activity
-            venueImageView.kf.setImage(with: venueViewModel.imageUrl)
+            if let url = venueViewModel.imageUrl {
+                venueImageView.kf.indicatorType = .activity
+                venueImageView.kf.setImage(with: url)
+            }
             venueDescriptionLabel.text = venueViewModel.address
         }
     }

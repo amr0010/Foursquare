@@ -17,9 +17,4 @@ class LoadingView: UIView {
        required init?(coder: NSCoder) {
            super.init(coder: coder)
        }
-       
-       override class func awakeFromNib() {
-           super.awakeFromNib()
-           print("awake")
-       }
 }

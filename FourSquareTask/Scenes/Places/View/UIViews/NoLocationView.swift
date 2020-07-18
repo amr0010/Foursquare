@@ -18,8 +18,4 @@ class NoLocationView: UIView {
         super.init(coder: coder)
     }
     
-    override class func awakeFromNib() {
-        super.awakeFromNib()
-        print("awake")
-    }
 }

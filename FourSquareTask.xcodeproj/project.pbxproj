@@ -28,7 +28,7 @@
 		4478560224C1FE50004F2996 /* PlacesViewController+Subscribers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4478560124C1FE50004F2996 /* PlacesViewController+Subscribers.swift */; };
 		4478560524C20853004F2996 /* VenueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4478560324C20853004F2996 /* VenueTableViewCell.swift */; };
 		4478560624C20853004F2996 /* VenueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4478560424C20853004F2996 /* VenueTableViewCell.xib */; };
-		4478560824C20A21004F2996 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4478560724C20A21004F2996 /* UITableViewCell.swift */; };
+		4478560824C20A21004F2996 /* UITableViewCell+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4478560724C20A21004F2996 /* UITableViewCell+Nib.swift */; };
 		4478560A24C20CD3004F2996 /* VenueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4478560924C20CD3004F2996 /* VenueViewModel.swift */; };
 		4478560F24C2FD81004F2996 /* NoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4478560E24C2FD80004F2996 /* NoDataView.xib */; };
 		4478561124C2FDA3004F2996 /* NoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4478561024C2FDA3004F2996 /* NoDataView.swift */; };
@@ -37,6 +37,17 @@
 		4478561A24C30201004F2996 /* NoLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4478561924C30201004F2996 /* NoLocationView.swift */; };
 		4478561C24C302D7004F2996 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4478561B24C302D7004F2996 /* LoadingView.xib */; };
 		4478561E24C302E3004F2996 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4478561D24C302E3004F2996 /* LoadingView.swift */; };
+		4478562024C320D4004F2996 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4478561F24C320D3004F2996 /* ErrorView.xib */; };
+		4478562224C320E4004F2996 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4478562124C320E4004F2996 /* ErrorView.swift */; };
+		4478562424C32E56004F2996 /* FourSquareTaskViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4478562324C32E56004F2996 /* FourSquareTaskViewModelTests.swift */; };
+		4478562624C3389E004F2996 /* VenueDtoMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4478562524C3389E004F2996 /* VenueDtoMock.swift */; };
+		4478562824C33A1E004F2996 /* VenuesDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447855FB24C0A426004F2996 /* VenuesDTO.swift */; };
+		4478562924C33E0F004F2996 /* VenueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4478560924C20CD3004F2996 /* VenueViewModel.swift */; };
+		4478562A24C33E13004F2996 /* PlacesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447855DF24BCD9D7004F2996 /* PlacesViewModel.swift */; };
+		4478562B24C33E3B004F2996 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447855F724BE43DB004F2996 /* APIClient.swift */; };
+		4478562C24C33E53004F2996 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447855F324BE2932004F2996 /* APIRouter.swift */; };
+		4478562D24C33E59004F2996 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447855F924BE4EBC004F2996 /* APIError.swift */; };
+		4478562E24C33E6C004F2996 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447855F524BE32C5004F2996 /* Constant.swift */; };
 		AB8177B577855494F61C3573 /* Pods_FourSquareTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8F9EEF8F8F14FE98F8A2046 /* Pods_FourSquareTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,7 +89,7 @@
 		4478560124C1FE50004F2996 /* PlacesViewController+Subscribers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlacesViewController+Subscribers.swift"; sourceTree = "<group>"; };
 		4478560324C20853004F2996 /* VenueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueTableViewCell.swift; sourceTree = "<group>"; };
 		4478560424C20853004F2996 /* VenueTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VenueTableViewCell.xib; sourceTree = "<group>"; };
-		4478560724C20A21004F2996 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		4478560724C20A21004F2996 /* UITableViewCell+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Nib.swift"; sourceTree = "<group>"; };
 		4478560924C20CD3004F2996 /* VenueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueViewModel.swift; sourceTree = "<group>"; };
 		4478560E24C2FD80004F2996 /* NoDataView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataView.xib; sourceTree = "<group>"; };
 		4478561024C2FDA3004F2996 /* NoDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataView.swift; sourceTree = "<group>"; };
@@ -87,6 +98,10 @@
 		4478561924C30201004F2996 /* NoLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLocationView.swift; sourceTree = "<group>"; };
 		4478561B24C302D7004F2996 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		4478561D24C302E3004F2996 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		4478561F24C320D3004F2996 /* ErrorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
+		4478562124C320E4004F2996 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		4478562324C32E56004F2996 /* FourSquareTaskViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSquareTaskViewModelTests.swift; sourceTree = "<group>"; };
+		4478562524C3389E004F2996 /* VenueDtoMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueDtoMock.swift; sourceTree = "<group>"; };
 		7DC539748A1D03BC68B9F862 /* Pods-FourSquareTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourSquareTaskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FourSquareTaskTests/Pods-FourSquareTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B8F9EEF8F8F14FE98F8A2046 /* Pods_FourSquareTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FourSquareTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F019C990375A578700CE290E /* Pods-FourSquareTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourSquareTaskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FourSquareTaskTests/Pods-FourSquareTaskTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +177,8 @@
 			children = (
 				447855CD24BCD944004F2996 /* FourSquareTaskTests.swift */,
 				447855CF24BCD944004F2996 /* Info.plist */,
+				4478562324C32E56004F2996 /* FourSquareTaskViewModelTests.swift */,
+				4478562524C3389E004F2996 /* VenueDtoMock.swift */,
 			);
 			path = FourSquareTaskTests;
 			sourceTree = "<group>";
@@ -264,7 +281,7 @@
 		447855FE24C1F48E004F2996 /* Extenstions */ = {
 			isa = PBXGroup;
 			children = (
-				4478560724C20A21004F2996 /* UITableViewCell.swift */,
+				4478560724C20A21004F2996 /* UITableViewCell+Nib.swift */,
 				4478561224C2FE92004F2996 /* UIView+Nib.swift */,
 			);
 			path = Extenstions;
@@ -304,6 +321,8 @@
 				4478561924C30201004F2996 /* NoLocationView.swift */,
 				4478561B24C302D7004F2996 /* LoadingView.xib */,
 				4478561D24C302E3004F2996 /* LoadingView.swift */,
+				4478561F24C320D3004F2996 /* ErrorView.xib */,
+				4478562124C320E4004F2996 /* ErrorView.swift */,
 			);
 			path = UIViews;
 			sourceTree = "<group>";
@@ -347,6 +366,7 @@
 				447855C524BCD944004F2996 /* Sources */,
 				447855C624BCD944004F2996 /* Frameworks */,
 				447855C724BCD944004F2996 /* Resources */,
+				E40C04EDC4EFB8AE9FC0AE0F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -407,6 +427,7 @@
 				447855C324BCD943004F2996 /* LaunchScreen.storyboard in Resources */,
 				4478560F24C2FD81004F2996 /* NoDataView.xib in Resources */,
 				447855C024BCD943004F2996 /* Assets.xcassets in Resources */,
+				4478562024C320D4004F2996 /* ErrorView.xib in Resources */,
 				4478561824C301EA004F2996 /* NoLocationView.xib in Resources */,
 				447855E924BCD9D7004F2996 /* LandingViewController.xib in Resources */,
 			);
@@ -498,6 +519,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E40C04EDC4EFB8AE9FC0AE0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FourSquareTaskTests/Pods-FourSquareTaskTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FourSquareTaskTests/Pods-FourSquareTaskTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -508,7 +551,8 @@
 				447855EF24BCD9D7004F2996 /* Coordinator.swift in Sources */,
 				4478560A24C20CD3004F2996 /* VenueViewModel.swift in Sources */,
 				4478561324C2FE92004F2996 /* UIView+Nib.swift in Sources */,
-				4478560824C20A21004F2996 /* UITableViewCell.swift in Sources */,
+				4478560824C20A21004F2996 /* UITableViewCell+Nib.swift in Sources */,
+				4478562224C320E4004F2996 /* ErrorView.swift in Sources */,
 				447855EA24BCD9D7004F2996 /* LandingCoordinator.swift in Sources */,
 				447855F624BE32C5004F2996 /* Constant.swift in Sources */,
 				4478560524C20853004F2996 /* VenueTableViewCell.swift in Sources */,
@@ -532,7 +576,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4478562A24C33E13004F2996 /* PlacesViewModel.swift in Sources */,
+				4478562B24C33E3B004F2996 /* APIClient.swift in Sources */,
+				4478562424C32E56004F2996 /* FourSquareTaskViewModelTests.swift in Sources */,
+				4478562924C33E0F004F2996 /* VenueViewModel.swift in Sources */,
+				4478562624C3389E004F2996 /* VenueDtoMock.swift in Sources */,
+				4478562C24C33E53004F2996 /* APIRouter.swift in Sources */,
 				447855CE24BCD944004F2996 /* FourSquareTaskTests.swift in Sources */,
+				4478562E24C33E6C004F2996 /* Constant.swift in Sources */,
+				4478562824C33A1E004F2996 /* VenuesDTO.swift in Sources */,
+				4478562D24C33E59004F2996 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
